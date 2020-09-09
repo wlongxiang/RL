@@ -126,7 +126,7 @@ def value_iter_q(env, theta=0.0001, discount_factor=1.0):
     """
     
     # Start with an all 0 Q-value function
-    Q = np.ones((env.nS, env.nA))
+    Q = np.zeros((env.nS, env.nA))
     policy = np.ones([env.nS, env.nA]) / env.nA
     while True:
         # YOUR CODE HERE
